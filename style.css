@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body,
+html {
+  height: 100%;
+  display: grid;
+  background-color: #2b3f5e;
+}
+
+p {
+  white-space: nowrap;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4em;
+  margin: auto;
+  animation: shadow 10s infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes shadow {
+  from {
+    text-shadow: 0 -0em 2em #2b3f5e, 0 -0em 2em #2b3f5e, 0 -0em 2em #2b3f5e,
+      0 -0em 2em #2b3f5e, 0 -0em 2em #2b3f5e, 0 0em 2em #2b3f5e, 0 0em 2em #2b3f5e,
+      0 0em 2em #2b3f5e, 0 0em 2em #2b3f5e, 0 0em 2em #2b3f5e;
+  }
+
+  40% {
+    text-shadow: -5em -5em 0px #DDF1F0, -4em -4em 0px #FEDDD5,
+      -3em -3em 0px #A5C8D1, -2em -2em 0px #E0D9C3, -1em -1em 0px #D7EDD5,
+      1em 1em 0px #D7EDD5, 2em 2em 0px #E0D9C3, 3em 3em 0px #A5C8D1,
+      4em 4em 0px #FEDDD5, 5em 5em 0px #DDF1F0;
+  }
+
+  90% {
+    text-shadow: 5em -5em 0px #9EA3F3, 4em -4em 0px #D3D6FD, 3em -3em 0px #E7E8FB,
+      2em -2em 0px #F5AE52, 1em -1em 0px #FC7869, -1em 1em 0px #FC7869,
+      -2em 2em 0px #F5AE52, -3em 3em 0px #E7E8FB, -4em 4em 0px #D3D6FD,
+      -5em 5em 0px #9EA3F3;
+  }
+
+  to {
+    text-shadow: 0 -0em 2em #005DBA, 0 -0em 2em #FF912A, 0 -0em 2em #E8484D,
+      0 -0em 2em #55965C, 0 -0em 2em #403F3F, 0 0em 2em #403F3F, 0 0em 2em #55965C,
+      0 0em 2em #E8484D, 0 0em 2em #FF912A, 0 0em 2em #005DBA;
+  }
+}
